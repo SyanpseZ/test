@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 350px;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 1.5rem;
+            color: #ff9800;
+        }
+
+        input[type="file"] {
+            margin-top: 1rem;
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #ff9800;
+            color: #121212;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label>Choose an Image:</label>
+            <input type="file" name="image" accept=".jpg, .jpeg, .png, .gif" required>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
