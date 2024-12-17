@@ -21,7 +21,6 @@ colorama==0.4.6
 comtypes==1.4.7
 crypto==1.4.1
 # Editable install with no version control (decompyle3==3.9.3.dev0)
--e d:\py\decompiling\python-decompile3-master
 discord==2.3.2
 discord-protos==0.0.2
 discord.py==2.4.0
