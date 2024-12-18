@@ -8,11 +8,11 @@ app.secret_key = 'your_secret_key'  # Change this!
 
 # Database connection details
 db_config = {
-    "host": "localhost",
-    "user": "myuser",
-    "password": "mypassword",
-    "database": "myapp_db",
-    "port": 3306,
+    "host": "34.136.133.76",       # Your Cloud SQL Public IP
+    "user": "root",               # Your Cloud SQL user
+    "password": "rootpass",  # Your Cloud SQL password
+    "database": "myapp_db",       # Your database name
+    "port": 3306                  # Default MySQL port
 }
 
 
